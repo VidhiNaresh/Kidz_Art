@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>canvas design</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cinzel+Decorative:wght@700&family=Comic+Neue:wght@700&family=Creepster&family=DM+Sans:wght@700&family=Dancing+Script&family=Hind+Madurai:wght@300&family=Inspiration&family=Josefin+Sans:wght@200;400&family=Patrick+Hand&family=Rochester&family=Srisakdi&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="canvas.css">
+    
+</head>
+
+<body>
+    <button onclick="logout();" id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+<center>
+    <h3 id="user_name"></h3>
+</center>
+    <div class="field">
+     
+        <canvas id="myCanvas"></canvas>
+        <div class="tools">
+            
+
+            <div onclick="change_color(this)" class="color-field" style="background: red;"></div>
+            <div onclick="change_color(this)" class="color-field" style="background: blue;"></div>
+            <div onclick="change_color(this)" class="color-field" style="background: green;"></div>
+            <div onclick="change_color(this)" class="color-field" style="background: yellow;"></div>
+            
+            
+            <input onInput="color = this.value" type="color" class="color-picker">
+            <input type="range" min="1" max="100" class="pen-range"
+            onInput="width_of_line = this.value">
+
+
+
+        </div>
+    </div>
+    <script src="canvas.js"></script>
+</body>
+
+</html>
